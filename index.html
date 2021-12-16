@@ -60,7 +60,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button primary">Заказать услугу</button>
+          <button data-modal-open type="button" class="button primary">Заказать услугу</button>
         </div>
       </section>
 
@@ -121,9 +121,31 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="whatdo">
-            <li class="item"><img src="images/what1.jpg" alt="Разработка" width="370" /></li>
-            <li class="item"><img src="images/what2.jpg" alt="Оптимизация" width="370" /></li>
-            <li class="item"><img src="images/what3.jpg" alt="Дизайн" width="370" /></li>
+            <li class="whatdo-item">
+              <div class="whatdo-thumb">
+                <img class="whatdo-img" src="images/what1.jpg" alt="Разработка" width="370" />
+
+                <div class="whatdo-description">
+                  <p class="whatdo-text">Десктопные приложения</p>
+                </div>
+              </div>
+            </li>
+            <li class="whatdo-item">
+              <div class="whatdo-thumb">
+                <img src="images/what2.jpg" alt="Оптимизация" width="370" />
+                <div class="whatdo-description">
+                  <p class="whatdo-text">Мобильные приложения</p>
+                </div>
+              </div>
+            </li>
+            <li class="whatdo-item">
+              <div class="whatdo-thumb">
+                <img src="images/what3.jpg" alt="Дизайн" width="370" />
+                <div class="whatdo-description">
+                  <p class="whatdo-text">Дизайнерские решения</p>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -333,6 +355,15 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button data-modal-close class="close-icon">
+            <svg width="27" height="27 ">
+              <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
     <!--Footer-->
     <footer class="page-footer">
@@ -395,5 +426,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
